@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+ul {
+    background-color: gray;
+    display: flex;
+    justify-content: flex-end;
+    li {
+        padding: 10px;
+        text-transform: uppercase;
+        a {
+           color: white;
+           text-decoration: none;
+           &:hover {
+            color: red;
+           } 
+        }
+    }
+}
