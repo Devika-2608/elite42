@@ -3,38 +3,83 @@
     padding: 0;
 }
 
-ul {
-    list-style: none;
-    background-color: grey;
-}
-
-ul.parent {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    li {
-        position: relative;
-        a {
-            padding: 10px;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-size: 20px;
-            color: white;
-            cursor: pointer;
+.navigation {
+    ul.parent {
+        list-style: none;
+        background-color: grey;
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px;
+        li {
+            position: relative;
+            a {
+                padding: 10px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+                cursor: pointer;
+                &:hover {
+                    color: rgb(112, 54, 143);
+                }
+            }
+            ul {
+                position: absolute;
+                display: none;
+                background-color: grey;
+                width: 150px;
+                top: 30px;
+            }
             &:hover {
-                color: purple;
+                ul {
+                    display: block;
+                }
             }
         }
-        ul {
-            position: absolute;
-            display: none;
-            background-color: grey;
-            width: 150px;
-            top: 30px;
-        }
-        &:hover {
-            ul {
-                display: block;
+    }
+}
+
+/*
+.header {
+    background-image: url("../Images/header.png");
+    width: 100%;
+    height: 240px;
+    background-repeat: no-repeat;
+}
+    */
+
+ul{
+    list-style: none;
+}   
+
+.content {
+    padding: 20px;
+    .products {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        li {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color: #f0f0f0;
+
+            button {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                border: none;
+                background-color: grey;
+                color: #f0f0f0;
+            }
+            img {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                bottom: 0px;
+                right: 0px;
+                transform: translate(-50%,-50%);
             }
         }
     }

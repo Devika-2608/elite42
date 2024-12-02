@@ -3,20 +3,17 @@
   padding: 0;
 }
 
-ul {
+.navigation ul.parent {
   list-style: none;
   background-color: grey;
-}
-
-ul.parent {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 5px;
 }
-ul.parent li {
+.navigation ul.parent li {
   position: relative;
 }
-ul.parent li a {
+.navigation ul.parent li a {
   padding: 10px;
   text-transform: uppercase;
   text-decoration: none;
@@ -24,16 +21,60 @@ ul.parent li a {
   color: white;
   cursor: pointer;
 }
-ul.parent li a:hover {
-  color: purple;
+.navigation ul.parent li a:hover {
+  color: rgb(112, 54, 143);
 }
-ul.parent li ul {
+.navigation ul.parent li ul {
   position: absolute;
   display: none;
   background-color: grey;
   width: 150px;
   top: 30px;
 }
-ul.parent li:hover ul {
+.navigation ul.parent li:hover ul {
   display: block;
+}
+
+/*
+.header {
+    background-image: url("../Images/header.png");
+    width: 100%;
+    height: 240px;
+    background-repeat: no-repeat;
+}
+    */
+ul {
+  list-style: none;
+}
+
+.content {
+  padding: 20px;
+}
+.content .products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.content .products li {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: #f0f0f0;
+}
+.content .products li button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  background-color: grey;
+  color: #f0f0f0;
+}
+.content .products li img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 0px;
+  right: 0px;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */
