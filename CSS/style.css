@@ -1,0 +1,46 @@
+.main {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background-color: rgb(157, 157, 157);
+  left: 50%;
+  transform: translate(-50%);
+}
+.main .header h1 {
+  padding-left: 100px;
+}
+.main .header p {
+  padding-left: 20px;
+}
+.main .input {
+  padding-left: 66px;
+  padding-top: 20px;
+}
+.main .button1 {
+  position: relative;
+  width: 300px;
+}
+.main .button1 button {
+  position: absolute;
+  background-color: rgb(74, 116, 166);
+  color: white;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  top: 50px;
+  transform: translate(-50%, -50%);
+}
+.main .button2 {
+  position: relative;
+  width: 300px;
+}
+.main .button2 button {
+  position: absolute;
+  background-color: rgb(74, 116, 166);
+  color: white;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=style.css.map */
